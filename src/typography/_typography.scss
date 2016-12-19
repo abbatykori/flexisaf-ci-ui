@@ -19,10 +19,11 @@
 
 @if $target-elements-directly == true {
   html, body {
-    font-family: $performance_font;
-    font-size: 14px;
+    //font-family: $performance_font;
+    font-family: 'Athiti', sans-serif;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 28px;
   }
 
   h1, h2, h3, h4, h5, h6, p {

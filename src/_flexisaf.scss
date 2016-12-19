@@ -1,0 +1,112 @@
+$menu-text-color: #000;
+$menu-text-color-hover: #0071bc;
+$side-nav-width: 280px;
+$page-header-bg-color: #3b455d;
+$page-header-text-color: #fff;
+$main-content-padding: 30px;
+
+body {
+  height: 100%;
+  background-color: #f6f6f6;
+}
+
+header.app-navigation-panel {
+  background: #fff;
+  width: $side-nav-width;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+
+  .logo {
+    text-align: center;
+    padding-top: $main-content-padding;
+
+    img {
+      max-width: 130px;
+    }
+  }
+  nav.menu {
+    ul {
+      padding: $main-content-padding;
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 15px;
+          line-height: 48px;
+          height: 48px;
+          font-weight: 600;
+          color: $menu-text-color;
+          display: block;
+          vertical-align: middle;
+          transition: all .15s;
+          border: 1px solid transparent;
+          &:hover{
+            border: 1px solid $menu-text-color-hover;
+            border-radius: 2px;
+          }
+          &:focus,&:active{
+            background-color: $menu-text-color-hover;
+            color: #fff;
+          }
+        }
+        .mdl-list__item-icon, .mdl-list__item-icon.material-icons {
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+main{
+  padding-left: $side-nav-width;
+
+  .header{
+    background-color: $page-header-bg-color;
+    margin: 0;
+    padding: 1px $main-content-padding;
+  }
+
+  h1.page-title{
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: $page-header-text-color;
+
+  }
+
+  .content{
+    padding: $main-content-padding;
+    background: #fff;
+    margin: $main-content-padding;
+    padding: $main-content-padding;
+  }
+}
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
